@@ -1,7 +1,5 @@
 
-# 🤖 LuckyTechHub-Bot
-
-This is a WhatsApp bot built using the Baileys library for group management, including features like tagging all members, muting/unmuting, and many more. It s designed to help admins efficiently manage WhatsApp groups.
+# 🤖 هذا بوت واتساب مُصمم باستخدام مكتبة Baileys لإدارة المجموعات، ويتضمن ميزات مثل وضع علامات على جميع الأعضاء، وكتم الصوت/إلغاء كتمه، وغيرها الكثير. صُمم لمساعدة المشرفين على إدارة مجموعات واتساب بكفاءة.
 
 <div align="center"> 
   <a href="https://git.io/typing-svg"> 
@@ -10,8 +8,8 @@ This is a WhatsApp bot built using the Baileys library for group management, inc
 </div> 
 
 <div align="center"> 
-  <a href="https://youtube.com/@luckytechhub-i9u"> 
-    <img src="https://github.com/luckytechhub1/LuckyTechHub-Bot/blob/main/assets/bot_image.jpg" alt="Lucky Tech Hub Bot" height="300"> 
+  <a href="https://youtube.com/@king_saqr_1?si=e1eR_9Thjb3Z30ON"> 
+    <img src="https://github.com/luckytechhub1/LuckyTechHub-Bot/blob/main/assets/bot_image.jpg" alt="King Saqr Bot" height="300"> 
   </a> 
 </div>
 
