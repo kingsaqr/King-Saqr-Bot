@@ -67,7 +67,7 @@
 ### انشر الآن على اللوحة أدناه
 <div align="center">
 <a href="https://dashboard.katabump.com/auth/login#d6b7d6" target="_blank">
-  <img src="https://img.shields.io/badge/Katabump-D6B7D6?style=for-the-badge&logo=server&logoColor=black" alt="Katabump"/>
+  <img src="https://img.shields.io/badge/King Saqr Bot-D6B7D6?style=for-the-badge&logo=server&logoColor=black" alt="Katabump"/>
 </a>
 </div>
 
