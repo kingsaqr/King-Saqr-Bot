@@ -75,10 +75,10 @@
 
 <div align="center">
   <a href="https://t.me/+T_8QE67Pn6tkMzNk">
-    <img src="https://img.shields.io/badge/Join%20Telegram-0078E7?style=for-the-badge&logo=telegram&logoColor=white" alt="قناتي على التلجرام"/>
+    <img src="https://img.shields.io/badge/SAQR%20Telegram-0078E7?style=for-the-badge&logo=telegram&logoColor=white" alt="قناتي على التلجرام"/>
   </a>
   <a href="https://whatsapp.com/channel/0029VbBFUto2v1IwxHZ4w62Q">
-    <img src="https://img.shields.io/badge/Join%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="قناة على الواتساب"/>
+    <img src="https://img.shields.io/badge/SAQR%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="قناة على الواتساب"/>
   </a>
 </div>
 
