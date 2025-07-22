@@ -55,8 +55,8 @@
 لمزيد من التخصيص وإرشادات الإعداد، انقر فوق الزر أدناه:
 
 <div align="center">
-  <a href="https://youtu.be/sZhSE0chBrk">
-    <img src="https://img.shields.io/badge/نشر البرنامج التعليمي على يوتيوب-dc3545?style=for-the-badge&logo=youtube" alt="YouTube Link"/>
+  <a href="https://kingsaqrsami.blogspot.com/2024/03/whatsapp-king-saqr.html?m=1">
+    <img src="https://img.shields.io/badge/Blogger KING SAQR-dc3545?style=for-the-badge&logo=youtube" alt="YouTube Link"/>
   </a>
   <a href="https://bot-hosting.net/?aff=1068419752923508776">
     <img src="https://img.shields.io/badge/Deploy on Panel-28a745?style=for-the-badge" alt="قناة الملك صقر على الواتساب"/>
@@ -98,7 +98,7 @@
 
 ## 📖 نبذة
 
-يساعد بوت واتساب King Saqr Hub مسؤولي المجموعات بتزويدهم بأدوات لإدارة مجموعات واتساب الكبيرة بكفاءة. يستخدم البوت مكتبة Baileys للتفاعل مع واجهة برمجة تطبيقات واتساب ويب، ويدعم ميزات الأجهزة المتعددة.
+يساعد بوت واتساب King Saqr مسؤولي المجموعات بتزويدهم بأدوات لإدارة مجموعات واتساب الكبيرة بكفاءة. يستخدم البوت مكتبة Baileys للتفاعل مع واجهة برمجة تطبيقات واتساب ويب، ويدعم ميزات الأجهزة المتعددة.
 
 يتميز البوت بخفة وزنه وسهولة تخصيصه لإضافة المزيد من الأوامر حسب احتياجاتك. يعمل البوت في بيئة Node.js، ويوفر مصادقة قائمة على رمز الاستجابة السريعة لربط حساب واتساب الخاص بك.
 
@@ -141,7 +141,7 @@
 
 ## 📄 رخصة
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/luckytechhub1/LuckyTechHub-Bot/blob/main/LICENSE) file for details.
+هذا المشروع مرخص بموجب [MIT License](https://opensource.org/licenses/MIT) - انظر [LICENSE](https://github.com/luckytechhub1/LuckyTechHub-Bot/blob/main/LICENSE) الملف للحصول على التفاصيل.
 
 ---
 
