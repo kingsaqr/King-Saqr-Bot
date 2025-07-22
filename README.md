@@ -9,7 +9,7 @@
 
 <div align="center"> 
   <a href="https://youtube.com/@king_saqr_1?si=e1eR_9Thjb3Z30ON"> 
-    <img src="https://github.com/luckytechhub1/LuckyTechHub-Bot/blob/main/assets/bot_image.jpg" alt="King Saqr Bot" height="300"> 
+    <img src="https://github.com/luckytechhub1/LuckyTechHub-Bot/blob/main/assets/bot_image.jpg" alt="قناة صقر على اليوتيوب" height="300"> 
   </a> 
 </div>
 
