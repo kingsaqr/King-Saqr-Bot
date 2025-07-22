@@ -1,6 +1,6 @@
 # 🤖 King Saqr-Bot
 
-This is a WhatsApp bot built using the Baileys library for group management, including features like tagging all members, muting/unmuting, and many more. It's designed to help admins efficiently manage WhatsApp groups.
+This is a WhatsApp bot built using the Baileys library for group management, including features like tagging all members, muting/unmuting, and many more. It s designed to help admins efficiently manage WhatsApp groups.
 
 <div align="center"> 
   <a href="https://git.io/typing-svg"> 
@@ -9,7 +9,7 @@ This is a WhatsApp bot built using the Baileys library for group management, inc
 </div> 
 
 <div align="center"> 
-  <a href="https://youtube.com/@King Saqr-i9u"> 
+  <a href="https://youtube.com/@king_saqr_1?si=e1eR_9Thjb3Z30ON"> 
     <img src="https://github.com/King Saqr1/King Saqr-Bot/blob/main/assets/bot_image.jpg" alt="King Saqr Bot" height="300"> 
   </a> 
 </div>
