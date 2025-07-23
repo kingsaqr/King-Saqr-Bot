@@ -99,15 +99,19 @@ const videoCommand = require('./commands/video');
 // Global settings
 global.packname = settings.packname;
 global.author = settings.author;
-global.channelLink = "https://whatsapp.com/channel/0029VbBFUto2v1IwxHZ4w62Q";
-global.ytch = "المطور الملك صقر";
+global.channelLink = "https://whatsapp.com/channel/0029VbAnuvT6RGJ9Qrf3NJ0L";
+global.ytch = "Lucky Tech Hub";
 
 // Add this near the top of main.js with other global configurations
 const channelInfo = {
     contextInfo: {
         forwardingScore: 1,
         isForwarded: true,
-
+        forwardedNewsletterMessageInfo: {
+            newsletterJid: '120363420656466131@newsletter',
+            newsletterName: 'Lucky Tech Hub Bot',
+            serverMessageId: -1
+        }
     }
 };
 
@@ -374,7 +378,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 if (isSenderAdmin || message.key.fromMe) {
                     await tagAllCommand(sock, chatId, senderId, message);
                 } else {
-                    await sock.sendMessage(chatId, { text: 'عذراً، فقط مسؤولي المجموعة هم من يستطيعون استخدام الأمر .tagall.', ...channelInfo }, {quoted: message});
+                    await sock.sendMessage(chatId, { text: 'Sorry, only group admins can use the .tagall command.', ...channelInfo }, {quoted: message});
                 }
                 break;
             case userMessage.startsWith('.tag'):
@@ -860,7 +864,7 @@ async function handleGroupParticipantUpdate(sock, update) {
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: channelId,
-                            newsletterName: 'King Saqr Bot',
+                            newsletterName: 'Lucky Tech Hub Bot',
                             serverMessageId: -1
                         }
                     }
@@ -899,7 +903,7 @@ async function handleGroupParticipantUpdate(sock, update) {
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: channelId,
-                            newsletterName: 'King Saqr Bot',
+                            newsletterName: 'Lucky Tech Hub Bot',
                             serverMessageId: -1
                         }
                     }
