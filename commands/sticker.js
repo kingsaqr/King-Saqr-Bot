@@ -35,11 +35,7 @@ async function stickerCommand(sock, chatId, message) {
             contextInfo: {
                 forwardingScore: 999,
                 isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363420656466131@newsletter',
-                    newsletterName: 'Lucky Tech Hub Bot',
-                    serverMessageId: -1
-                }
+                
             }
         },{ quoted: messageToQuote });
         return;
@@ -57,11 +53,7 @@ async function stickerCommand(sock, chatId, message) {
                 contextInfo: {
                     forwardingScore: 999,
                     isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363420656466131@newsletter',
-                        newsletterName: 'Lucky Tech Hub Bot',
-                        serverMessageId: -1
-                    }
+                    
                 }
             });
             return;
@@ -145,11 +137,7 @@ async function stickerCommand(sock, chatId, message) {
             contextInfo: {
                 forwardingScore: 999,
                 isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363420656466131@newsletter',
-                    newsletterName: 'Lucky Tech Hub Bot',
-                    serverMessageId: -1
-                }
+                
             }
         });
     }

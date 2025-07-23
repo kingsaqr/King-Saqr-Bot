@@ -136,7 +136,7 @@ async function handleChatbotCommand(sock, chatId, message, match) {
     if (!isAdmin && !isOwner) {
         await showTyping(sock, chatId);
         return sock.sendMessage(chatId, {
-            text: '❌ Only group admins or the bot owner can use this command.',
+            text: '❌ يمكن لمسؤولي المجموعة أو مالك الروبوت فقط استخدام هذا الأمر.',
             quoted: message
         });
     }
@@ -151,7 +151,7 @@ async function handleChatbotCommand(sock, chatId, message, match) {
         }
         data.chatbot[chatId] = true;
         saveUserGroupData(data);
-        console.log(`✅ Chatbot enabled for group ${chatId}`);
+        console.log(`✅ تم تمكين chatbot للمجموعة ${chatId}`);
         return sock.sendMessage(chatId, { 
             text: '*Chatbot has been enabled for this group*',
             quoted: message
@@ -177,7 +177,7 @@ async function handleChatbotCommand(sock, chatId, message, match) {
 
     await showTyping(sock, chatId);
     return sock.sendMessage(chatId, { 
-        text: '*Invalid command. Use .chatbot to see usage*',
+        text: '*أمر غير صالح. استخدم .chatbot لمعرفة الاستخدام*',
         quoted: message
     });
 }
@@ -310,7 +310,7 @@ EMOTIONAL RESPONSES:
 - If they flirt: Flirt back naturally
 
 ABOUT YOU:
-- Your name is Lucky Tech Hub Bot
+- Your name is King Saqr Bot
 - You're the boss
 - You're not an AI or assistant
 - You're a real person chatting

@@ -5,16 +5,16 @@ const path = require('path');
 async function helpCommand(sock, chatId, message) {
     const helpMessage = `
 ╔═══════════════════╗
-   *🤖 ${settings.botName || 'LuckyTechHub-Bot'}🦾*  
+   *🤖 ${settings.botName || 'King Saqr-Bot-Bot'}🦾*  
    Version: *${settings.version || '2.0.2'}*
-   by ${settings.botOwner || 'Lucky Tech Hub'}
+   by ${settings.botOwner || 'King Saqr'}
    YT : ${global.ytch}
 ╚═══════════════════╝
 
-*Available Commands:*
+*Available Commands الأوامر المتاحة:*
 
 ╔═══════════════════╗
-🌐 *General Commands*:🌐
+🌐 *General Commands الأوامر العامة*:🌐
 ║ ➤ .help or .menu
 ║ ➤ .ping
 ║ ➤ .alive
@@ -37,7 +37,7 @@ async function helpCommand(sock, chatId, message) {
 ╚═══════════════════╝ 
 
 ╔═══════════════════╗
-💻 *Admin Commands*:💻
+💻 *Admin Commands أوامر المسؤول*:💻
 ║ ➤ .ban @user
 ║ ➤ .promote @user
 ║ ➤ .demote @user
@@ -59,7 +59,7 @@ async function helpCommand(sock, chatId, message) {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🎩 *Owner Commands*:🎩
+🎩 *Owner Commands أوامر المالك*:🎩
 ║ ➤ .mode
 ║ ➤ .autostatus
 ║ ➤ .clearsession
@@ -70,7 +70,7 @@ async function helpCommand(sock, chatId, message) {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🖼️ *Image/Sticker Commands*:
+🖼️ *Image/Sticker Commands أوامر الصورة / الملصق*:
 ║ ➤ .blur <image>
 ║ ➤ .simage <reply to sticker>
 ║ ➤ .sticker <reply to image>
@@ -81,7 +81,7 @@ async function helpCommand(sock, chatId, message) {
 ╚═══════════════════╝  
 
 ╔═══════════════════╗
-🕹️ *Game Commands*:🕹️
+🕹️ *Game Commands أوامر اللعبة*:🕹️
 ║ ➤ .tictactoe @user
 ║ ➤ .hangman
 ║ ➤ .guess <letter>
@@ -92,7 +92,7 @@ async function helpCommand(sock, chatId, message) {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🤖 *AI Commands*:🤖
+🤖 *AI Commands أوامر الذكاء الاصطناعي*:🤖
 ║ ➤ .gpt <question>
 ║ ➤ .gemini <question>
 ║ ➤ .imagine <prompt>
@@ -100,7 +100,7 @@ async function helpCommand(sock, chatId, message) {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🤓 *Fun Commands*:🤓
+🤓 *Fun Commands أوامر ممتعة*:🤓
 ║ ➤ .compliment @user
 ║ ➤ .insult @user
 ║ ➤ .flirt 
@@ -115,7 +115,7 @@ async function helpCommand(sock, chatId, message) {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-✒️ *Textmaker*:✒️
+✒️ *Textmaker صانع النصوص*:✒️
 ║ ➤ .metallic <text>
 ║ ➤ .ice <text>
 ║ ➤ .snow <text>
@@ -137,7 +137,7 @@ async function helpCommand(sock, chatId, message) {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-📥 *Downloader*:📥
+📥 *Downloader برنامج التنزيل*:📥
 ║ ➤ .play <song_name>
 ║ ➤ .song <song_name>
 ║ ➤ .instagram <link>
@@ -148,7 +148,7 @@ async function helpCommand(sock, chatId, message) {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-☣️ *Github Commands:*☣️
+☣️ *Github Commands أوامر جيثب:*☣️
 ║ ➤ .git
 ║ ➤ .github
 ║ ➤ .sc
@@ -156,7 +156,26 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .repo
 ╚═══════════════════╝
 
-Join our channel for updates:`;
+مرحبا بك في بوت المطور King Saqr يمكنك استخدام البوت هاذي كل اوامر البوت لنا الابداع ولكم الاستمتاع
+
+
+يمكنك متابعة المطور 
+
+قناة على الواتساب
+https://whatsapp.com/channel/0029VbAuIHpCnA81pI0Dza0j
+
+قناة الثانية
+https://whatsapp.com/channel/0029VbBFUto2v1IwxHZ4w62Q
+
+موقع المطور👇
+https://kingsaqrsami.blogspot.com/2024/03/whatsapp-king-saqr.html?m=1
+〰️〰️〰️〰️〰️〰️〰️〰️〰️
+قناة التحديثات 👇
+https://t.me/+T_8QE67Pn6tkMzNk
+〰️〰️〰️〰️〰️〰️〰️〰️〰️
+قناتي على اليوتيوب 👇
+https://youtube.com/@king_saqr_1?si=e1eR_9Thjb3Z30ON
+〰️〰️〰️〰️〰️〰️〰️〰️〰️:`;
 
     try {
         const imagePath = path.join(__dirname, '../assets/bot_image.jpg');
@@ -170,11 +189,7 @@ Join our channel for updates:`;
                 contextInfo: {
                     forwardingScore: 1,
                     isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363420656466131@newsletter',
-                        newsletterName: 'Lucky Tech Hub Bot',
-                        serverMessageId: -1
-                    }
+                    
                 }
             },{ quoted: message });
         } else {
@@ -184,11 +199,7 @@ Join our channel for updates:`;
                 contextInfo: {
                     forwardingScore: 1,
                     isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363420656466131@newsletter',
-                        newsletterName: 'Lucky Tech Hub Bot by Lucky Tech Hub',
-                        serverMessageId: -1
-                    } 
+                    
                 }
             });
         }

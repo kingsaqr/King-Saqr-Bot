@@ -38,21 +38,21 @@ async function warnCommand(sock, chatId, senderId, mentionedJids, message) {
             
             if (!isBotAdmin) {
                 await sock.sendMessage(chatId, { 
-                    text: '❌ Error: Please make the bot an admin first to use this command.'
+                    text: '❌ خطأ: يرجى جعل الروبوت مسؤولاً أولاً لاستخدام هذا الأمر.'
                 });
                 return;
             }
 
             if (!isSenderAdmin) {
                 await sock.sendMessage(chatId, { 
-                    text: '❌ Error: Only group admins can use the warn command.'
+                    text: '❌ خطأ: يمكن فقط لمسؤولي المجموعة استخدام أمر التحذير.'
                 });
                 return;
             }
         } catch (adminError) {
             console.error('Error checking admin status:', adminError);
             await sock.sendMessage(chatId, { 
-                text: '❌ Error: Please make sure the bot is an admin of this group.'
+                text: '❌ خطأ: يرجى التأكد من أن البوت هو أحد مسؤولي هذه المجموعة.'
             });
             return;
         }
@@ -70,7 +70,7 @@ async function warnCommand(sock, chatId, senderId, mentionedJids, message) {
         
         if (!userToWarn) {
             await sock.sendMessage(chatId, { 
-                text: '❌ Error: Please mention the user or reply to their message to warn!'
+                text: '❌ خطأ: يرجى ذكر المستخدم أو الرد على رسالته للتحذير!'
             });
             return;
         }
@@ -94,11 +94,11 @@ async function warnCommand(sock, chatId, senderId, mentionedJids, message) {
             warnings[chatId][userToWarn]++;
             fs.writeFileSync(warningsPath, JSON.stringify(warnings, null, 2));
 
-            const warningMessage = `*『 WARNING ALERT 』*\n\n` +
-                `👤 *Warned User:* @${userToWarn.split('@')[0]}\n` +
-                `⚠️ *Warning Count:* ${warnings[chatId][userToWarn]}/3\n` +
-                `👑 *Warned By:* @${senderId.split('@')[0]}\n\n` +
-                `📅 *Date:* ${new Date().toLocaleString()}`;
+            const warningMessage = `*『 تنبيه تحذير 』*\n\n` +
+                `👤 *تحذير المستخدم:* @${userToWarn.split('@')[0]}\n` +
+                `⚠️ *عدد التحذيرات:* ${warnings[chatId][userToWarn]}/3\n` +
+                `👑 *حذر من قبل:* @${senderId.split('@')[0]}\n\n` +
+                `📅 *تاريخ:* ${new Date().toLocaleString()}`;
 
             await sock.sendMessage(chatId, { 
                 text: warningMessage,

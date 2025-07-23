@@ -6,11 +6,7 @@ const channelInfo = {
     contextInfo: {
         forwardingScore: 999,
         isForwarded: true,
-        forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363420656466131@newsletter',
-            newsletterName: 'Lucky Tech Hub Bot',
-            serverMessageId: -1
-        }
+
     }
 };
 

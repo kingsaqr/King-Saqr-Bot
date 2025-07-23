@@ -67,11 +67,11 @@ async function demoteCommand(sock, chatId, mentionedJids, message) {
         // Add delay to avoid rate limiting
         await new Promise(resolve => setTimeout(resolve, 1000));
 
-        const demotionMessage = `*『 GROUP DEMOTION 』*\n\n` +
-            `👤 *Demoted User${userToDemote.length > 1 ? 's' : ''}:*\n` +
+        const demotionMessage = `*『 خفض المجموعة 』*\n\n` +
+            `👤 *خفض المستخدم${userToDemote.length > 1 ? 's' : ''}:*\n` +
             `${usernames.map(name => `• ${name}`).join('\n')}\n\n` +
-            `👑 *Demoted By:* @${message.key.participant ? message.key.participant.split('@')[0] : message.key.remoteJid.split('@')[0]}\n\n` +
-            `📅 *Date:* ${new Date().toLocaleString()}`;
+            `👑 *خفضت من قبل:* @${message.key.participant ? message.key.participant.split('@')[0] : message.key.remoteJid.split('@')[0]}\n\n` +
+            `📅 *بتاريخ:* ${new Date().toLocaleString()}`;
         
         await sock.sendMessage(chatId, { 
             text: demotionMessage,
@@ -131,11 +131,11 @@ async function handleDemotionEvent(sock, groupId, participants, author) {
         // Add delay to avoid rate limiting
         await new Promise(resolve => setTimeout(resolve, 1000));
 
-        const demotionMessage = `*『 GROUP DEMOTION 』*\n\n` +
-            `👤 *Demoted User${participants.length > 1 ? 's' : ''}:*\n` +
+        const demotionMessage = `*『 تخفيض رتبة المجموعة 』*\n\n` +
+            `👤 *المستخدم الذي تم تخفيض رتبته${participants.length > 1 ? 's' : ''}:*\n` +
             `${demotedUsernames.map(name => `• ${name}`).join('\n')}\n\n` +
-            `👑 *Demoted By:* ${demotedBy}\n\n` +
-            `📅 *Date:* ${new Date().toLocaleString()}`;
+            `👑 *تم تخفيض رتبته بواسطة:* ${demotedBy}\n\n` +
+            `📅 *تاريخ:* ${new Date().toLocaleString()}`;
         
         await sock.sendMessage(groupId, {
             text: demotionMessage,

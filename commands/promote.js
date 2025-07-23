@@ -74,11 +74,11 @@ async function handlePromotionEvent(sock, groupId, participants, author) {
             promotedBy = 'System';
         }
 
-        const promotionMessage = `*『 GROUP PROMOTION 』*\n\n` +
-            `👥 *Promoted User${participants.length > 1 ? 's' : ''}:*\n` +
+        const promotionMessage = `*『 الترويج للمجموعة 』*\n\n` +
+            `👥 *المستخدم المروج${participants.length > 1 ? 's' : ''}:*\n` +
             `${promotedUsernames.map(name => `• ${name}`).join('\n')}\n\n` +
-            `👑 *Promoted By:* ${promotedBy}\n\n` +
-            `📅 *Date:* ${new Date().toLocaleString()}`;
+            `👑 *يروج لها:* ${promotedBy}\n\n` +
+            `📅 *تاريخ:* ${new Date().toLocaleString()}`;
         
         await sock.sendMessage(groupId, {
             text: promotionMessage,

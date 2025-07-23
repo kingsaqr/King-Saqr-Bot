@@ -6,7 +6,7 @@ async function tagAllCommand(sock, chatId, senderId) {
         
         if (!isSenderAdmin && !isBotAdmin) {
             await sock.sendMessage(chatId, {
-                text: 'Only admins can use the .tagall command.'
+                text: 'يمكن للمشرفين فقط استخدام الأمر .tagall.'
             });
             return;
         }
@@ -21,7 +21,7 @@ async function tagAllCommand(sock, chatId, senderId) {
         }
 
         // Create message with each member on a new line
-        let message = '🔊 *Group Members:*\n\n';
+        let message = '🔊 *أعضاء المجموعة:*\n\n';
         participants.forEach(participant => {
             message += `@${participant.id.split('@')[0]}\n`; // Add \n for new line
         });
