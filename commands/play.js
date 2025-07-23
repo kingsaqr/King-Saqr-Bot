@@ -8,7 +8,7 @@ async function playCommand(sock, chatId, message) {
         
         if (!searchQuery) {
             return await sock.sendMessage(chatId, { 
-                text: "ما هي الأغنية التي تريد تنزيلها؟"
+                text: "What song do you want to download?"
             });
         }
 
@@ -59,5 +59,5 @@ async function playCommand(sock, chatId, message) {
 
 module.exports = playCommand; 
 
-/*Powered by King Saqr-BOT*
-*Credits to King Saqr*`*/
+/*Powered by LUCKY TECH HUB-BOT*
+*Credits to Lucky218*`*/

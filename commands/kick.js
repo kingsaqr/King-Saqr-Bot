@@ -12,7 +12,7 @@ async function kickCommand(sock, chatId, senderId, mentionedJids, message) {
         }
 
         if (!isSenderAdmin) {
-            await sock.sendMessage(chatId, { text: 'يمكن لمسؤولي المجموعة فقط استخدام الأمر kick.' }, { quoted: message });
+            await sock.sendMessage(chatId, { text: 'Only group admins can use the kick command.' }, { quoted: message });
             return;
         }
     }

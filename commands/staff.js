@@ -21,9 +21,9 @@ async function staffCommand(sock, chatId, msg) {
 
         // Create staff text
         const text = `
-≡ *مشرفي المجموعة* _${groupMetadata.subject}_
+≡ *GROUP ADMINS* _${groupMetadata.subject}_
 
-┌─⊷ *المشرفين*
+┌─⊷ *ADMINS*
 ▢ ${listAdmin}
 └───────────
 `.trim();
