@@ -1,5 +1,5 @@
 /**
- * Lucky Tech Hub Bot - A WhatsApp Bot
+ * King Saqr Bot - A WhatsApp Bot
  * Copyright (c) 2025 Lucky218
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -80,10 +80,10 @@ const store = {
     }
 }
 
-let phoneNumber = "911234567890"
+let phoneNumber = "967739965055"
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'))
 
-global.botname = "Lucky Tech Hub Bot"
+global.botname = "King Saqr Bot"
 global.themeemoji = "•"
 
 const settings = require('./settings')
@@ -153,11 +153,7 @@ async function startXeonBotInc() {
                         contextInfo: {
                             forwardingScore: 1,
                             isForwarded: true,
-                            forwardedNewsletterMessageInfo: {
-                                newsletterJid: '120363420656466131@newsletter',
-                                newsletterName: 'Lucky Tech Hub Bot',
-                                serverMessageId: -1
-                            }
+                            
                         }
                     }).catch(console.error);
                 }
@@ -246,27 +242,23 @@ async function startXeonBotInc() {
             
             const botNumber = XeonBotInc.user.id.split(':')[0] + '@s.whatsapp.net';
             await XeonBotInc.sendMessage(botNumber, { 
-                text: `🤖 Bot Connected Successfully!\n\n⏰ Time: ${new Date().toLocaleString()}\n✅ Status: Online and Ready!
-                \n✅Make sure to join below channel`,
+                text: `🤖 بوت متصل بنجاح!\n\n⏰ Time: ${new Date().toLocaleString()}\n✅ الحالة: متصل وجاهز!
+                \n✅تأكد من الانضمام إلى القناة التلجرام https://t.me/+T_8QE67Pn6tkMzNk`,
                 contextInfo: {
                     forwardingScore: 1,
                     isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363420656466131@newsletter',
-                        newsletterName: 'Lucky Tech Hub Bot',
-                        serverMessageId: -1
-                    }
+                    
                 }
             });
 
             await delay(1999)
-            console.log(chalk.yellow(`\n\n  ${chalk.bold.blue(`[ ${global.botname || 'Lucky Tech Hub Bot'} ]`)}\n\n`))
+            console.log(chalk.yellow(`\n\n  ${chalk.bold.blue(`[ ${global.botname || 'King Saqr Bot'} ]`)}\n\n`))
             console.log(chalk.cyan(`< ================================================== >`))
-            console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: LUCKY TECH HUB`))
+            console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: King Saqr`))
             console.log(chalk.magenta(`${global.themeemoji || '•'} GITHUB: luckytechhub`))
             console.log(chalk.magenta(`${global.themeemoji || '•'} WA NUMBER: ${owner}`))
-            console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: LUCKY TECH HUB`))
-            console.log(chalk.green(`${global.themeemoji || '•'} 🤖 Bot Connected Successfully! ✅`))
+            console.log(chalk.magenta(`${global.themeemoji || '•'} رصيد: King Saqr`))
+            console.log(chalk.green(`${global.themeemoji || '•'} 🤖 بوت متصل بنجاح! ✅`))
         }
         if (
             connection === "close" &&
