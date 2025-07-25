@@ -12,7 +12,7 @@ async function videoCommand(sock, chatId, message) {
         const searchQuery = text.split(' ').slice(1).join(' ').trim();
         
         if (!searchQuery) {
-            await sock.sendMessage(chatId, { text: 'What video do you want to download?' }, { quoted: message });
+            await sock.sendMessage(chatId, { text: 'ما هو الفيديو الذي تريد تنزيله؟' }, { quoted: message });
             return;
         }
 
@@ -55,7 +55,7 @@ async function videoCommand(sock, chatId, message) {
         const data = await response.json();
 
         if (!data || !data.result || !data.result.download || !data.result.download.url) {
-            await sock.sendMessage(chatId, { text: 'Failed to get a valid download link from the API.' }, { quoted: message });
+            await sock.sendMessage(chatId, { text: 'فشل الحصول على رابط تنزيل صالح من واجهة برمجة التطبيقات.' }, { quoted: message });
             return;
         }
 
@@ -72,7 +72,7 @@ async function videoCommand(sock, chatId, message) {
         
         const videoRes = await fetch(videoDownloadUrl);
         if (!videoRes.ok) {
-            await sock.sendMessage(chatId, { text: 'Failed to download the video file.' }, { quoted: message });
+            await sock.sendMessage(chatId, { text: 'فشل تحميل ملف الفيديو.' }, { quoted: message });
             return;
         }
         
@@ -98,7 +98,7 @@ async function videoCommand(sock, chatId, message) {
                 video: { url: convertedFile },
                 mimetype: 'video/mp4',
                 fileName: filename,
-                caption: `*${title}*\n\n> *_Downloaded by Lucky Tech Hub Bot_*`
+                caption: `*${title}*\n\n> *_Downloaded by King Saqr Bot_*`
             }, { quoted: message });
             
         } catch (conversionError) {
@@ -108,7 +108,7 @@ async function videoCommand(sock, chatId, message) {
                 video: { url: tempFile },
                 mimetype: 'video/mp4',
                 fileName: filename,
-                caption: `*${title}*\n\n> *_Downloaded by Lucky Tech Hub Bot_*`
+                caption: `*${title}*\n\n> *_Downloaded by King Saqr Bot_*`
             }, { quoted: message });
         }
 

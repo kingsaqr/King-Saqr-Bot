@@ -1,7 +1,7 @@
 const settings = require("../settings");
 async function aliveCommand(sock, chatId, message) {
     try {
-        const message1 = `*🤖 Lucky Tech Hub Bot is Active!*\n\n` +
+        const message1 = `*🤖 King Saqr Bot is Active!*\n\n` +
                        `*Version:* ${settings.version}\n` +
                        `*Status:* Online\n` +
                        `*Mode:* Public\n\n` +
@@ -17,11 +17,7 @@ async function aliveCommand(sock, chatId, message) {
             contextInfo: {
                 forwardingScore: 999,
                 isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363420656466131@newsletter',
-                    newsletterName: 'Lucky Tech Hub Bot',
-                    serverMessageId: -1
-                }
+
             }
         }, { quoted: message });
     } catch (error) {

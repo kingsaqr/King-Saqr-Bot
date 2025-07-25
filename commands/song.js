@@ -153,7 +153,7 @@ async function songCommand(sock, chatId, message) {
         const text = message.message?.conversation || message.message?.extendedTextMessage?.text;
         const searchQuery = text.split(' ').slice(1).join(' ').trim();
         if (!searchQuery) {
-            return await sock.sendMessage(chatId, { text: "What song do you want to download?" });
+            return await sock.sendMessage(chatId, { text: "ما هي الأغنية التي تريد تنزيلها؟" });
         }
 
         // Determine if input is a YouTube link or search query
@@ -174,10 +174,10 @@ async function songCommand(sock, chatId, message) {
         try {
             result = await savetube.download(videoUrl, 'mp3');
         } catch (err) {
-            return await sock.sendMessage(chatId, { text: "Failed to fetch download link. Try again later." });
+            return await sock.sendMessage(chatId, { text: "فشل في جلب رابط التحميل. حاول مرة أخرى في وقت لاحق." });
         }
         if (!result || !result.status || !result.result || !result.result.download) {
-            return await sock.sendMessage(chatId, { text: "Failed to get a valid download link from the API." });
+            return await sock.sendMessage(chatId, { text: "فشل في الحصول على رابط تنزيل صالح من واجهة برمجة التطبيقات." });
         }
 
         // Send thumbnail and title first
@@ -185,7 +185,7 @@ async function songCommand(sock, chatId, message) {
         try {
             sentMsg = await sock.sendMessage(chatId, {
                 image: { url: result.result.thumbnail },
-                caption: `*${result.result.title}*\n\n> _Downloading your song..._\n > *_By Lucky Tech Hub Bot_*`
+                caption: `*${result.result.title}*\n\n> _تنزيل أغنيتك..._\n > *_By King Saqr Bot_*`
             }, { quoted: message });
         } catch (e) {
             // If thumbnail fails, fallback to just sending the audio

@@ -21,16 +21,16 @@ async function groupInfoCommand(sock, chatId, msg) {
 
         // Create info text
         const text = `
-┌──「 *INFO GROUP* 」
+┌──「 *مجموعة المعلومات* 」
 ▢ *♻️ID:*
    • ${groupMetadata.id}
-▢ *🔖NAME* : 
+▢ *🔖اسم* : 
 • ${groupMetadata.subject}
-▢ *👥Members* :
+▢ *👥الأعضاء* :
 • ${participants.length}
-▢ *🤿Group Owner:*
+▢ *🤿مالك المجموعة:*
 • @${owner.split('@')[0]}
-▢ *🕵🏻‍♂️Admins:*
+▢ *🕵🏻‍♂️المشرفين:*
 ${listAdmin}
 
 ▢ *📌Description* :

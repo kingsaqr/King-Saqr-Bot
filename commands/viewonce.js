@@ -8,11 +8,7 @@ const channelInfo = {
     contextInfo: {
         forwardingScore: 1,
         isForwarded: true,
-        forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363420656466131@newsletter',
-            newsletterName: 'Lucky Tech Hub Bot',
-            serverMessageId: -1
-        }
+
     }
 };
 
@@ -75,7 +71,7 @@ async function viewOnceCommand(sock, chatId, message) {
                 
                 await sock.sendMessage(chatId, { 
                     image: buffer,
-                    caption: `*👀 Lucky Tech Hub Bot Anti ViewOnce 👀*\n\n*Type:* Image 📸\n${caption ? `*Caption:* ${caption}` : ''}`,
+                    caption: `*👀 King Saqr Bot عرض مضاد 👀*\n\n*نوع:* صورة 📸\n${caption ? `*Caption:* ${caption}` : ''}`,
                     ...channelInfo
                 });
                 console.log('✅ View once image processed successfully');
@@ -117,7 +113,7 @@ async function viewOnceCommand(sock, chatId, message) {
 
                 await sock.sendMessage(chatId, { 
                     video: fs.readFileSync(tempFile),
-                    caption: `*👀 Lucky Tech Hub Bot Anti ViewOnce 👀*\n\n*Type:* Video 📹\n${caption ? `*Caption:* ${caption}` : ''}`,
+                    caption: `*👀 King Saqr Bot Anti ViewOnce 👀*\n\n*Type:* Video 📹\n${caption ? `*Caption:* ${caption}` : ''}`,
                     ...channelInfo
                 });
 
